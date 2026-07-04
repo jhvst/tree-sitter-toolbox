@@ -68,7 +68,7 @@
         {
           name = "opengraph-query";
           help = "Query OpenGraph meta-tags from HTML files.";
-          command = "${lib.getExe config.packages.opengraph-query}";
+          command = ''${lib.getExe config.packages.opengraph-query} "$@"'';
         }
       ];
     };
